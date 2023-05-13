@@ -1,4 +1,5 @@
-https://github.com/VadimGurzhy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+# yamdb_final
+![yamdb_workflow](https://github.com/VadimGurzhy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 # Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
