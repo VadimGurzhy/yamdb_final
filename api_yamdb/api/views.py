@@ -13,26 +13,16 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.validators import ValidationError
 from rest_framework_simplejwt.tokens import AccessToken
-
 from reviews.models import Category, Genre, Review, Title
+
 from .filters import TitleFilter
-from .permissions import (
-    IsAdmin,
-    IsAdminOrReadOnly,
-    IsAuthorAdminModerateOrReadOnly,
-)
-from .serializers import (
-    CategorySerializer,
-    CommentSerializer,
-    GenreSerializer,
-    ReviewSerializer,
-    SelfUserSerializer,
-    TitlePostSerializer,
-    TitleReadSerializer,
-    TokenObtainSerializer,
-    UserRegistrationSerializer,
-    UserSerializer,
-)
+from .permissions import (IsAdmin, IsAdminOrReadOnly,
+                          IsAuthorAdminModerateOrReadOnly)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          SelfUserSerializer, TitlePostSerializer,
+                          TitleReadSerializer, TokenObtainSerializer,
+                          UserRegistrationSerializer, UserSerializer)
 
 User = get_user_model()
 
