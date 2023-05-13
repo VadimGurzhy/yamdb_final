@@ -231,7 +231,4 @@ GET /api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/
 * [djangorestframework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 
 # Авторы:
-
-* [Мамед Алибеков](https://github.com/Niechec) (Регистрация и аутентификация, пользователи)
-* [Вадим Гуржий](https://github.com/VadimGurzhy) (Произведения, категории, жанры, импорт данных из csv)
-* [Алексей Ким](https://github.com/kim-a-s) (Отзывы, комментарии, рейтинги)
+* [Вадим Гуржий](https://github.com/VadimGurzhy) 
