@@ -65,7 +65,9 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo systemctl stop nginx
-            sudo docker compose pull
+            sudo docker-compose pull vadimgurzhy/api_yamdb:v15.05.2023
+            sudo docker-compose stop
+            sudo docker-compose rm web
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
@@ -73,7 +75,7 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-            sudo docker compose up -d
+            sudo docker-compose up -d
 
   send_message:
     runs-on: ubuntu-latest
